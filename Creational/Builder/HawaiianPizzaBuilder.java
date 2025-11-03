@@ -1,5 +1,3 @@
-package Creational.Builder;
-
 // Concrete Builder
 public class HawaiianPizzaBuilder implements PizzaBuilder {
     private Pizza pizza;

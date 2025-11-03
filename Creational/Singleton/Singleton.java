@@ -1,37 +1,18 @@
-package Creational.Singleton;
-
-import java.io.Serializable;
-
-public class Singleton implements Serializable, Cloneable{
+public class Singleton{
     
-    //static as we can only use static variable inside static method
+    // Static variable to hold the single instance
     private static Singleton instance;
-    
+
+    // Private constructor prevents instantiation from other classes
     private Singleton(){
-        // prevent reflection 
-        // if(instance!=null){
-        //     throw new RuntimeException("You are tryig to break singleton pattern");
-        // }
+        System.out.println("Singleton instance created");
     }
 
-    //Lazy Initialization
-    //static as this method will not require object creation
-    public static Singleton getInstance(){
-        if(instance==null){
-            instance= new Singleton();
+    // Public method to provide access to the instance
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
         }
         return instance;
-    }
-
-    // prevents serialization
-    public Object readResolve(){
-        return instance;
-    }
-
-    // cloning
-    public Object clone() throws CloneNotSupportedException{
-        return instance;
-        // prevent cloning
-        // throw new CloneNotSupportedException();
     }
 }

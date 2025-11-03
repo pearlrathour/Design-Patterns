@@ -1,5 +1,3 @@
-package Creational.Builder;
-
 //Product -> resulting object
 public class Pizza {
     private String dough;

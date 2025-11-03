@@ -1,5 +1,3 @@
-package Creational.Factory;
-
 public class EmpFactory {
     public static Employee getEmployee(String empType){
         if(empType.trim().equals("ANDROID DEV"))

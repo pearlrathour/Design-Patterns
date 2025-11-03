@@ -1,5 +1,3 @@
-package Creational.Factory;
-
 public class WebDev implements Employee{
     public int salary(){
         System.out.println("Web Dev Salary");

@@ -1,5 +1,3 @@
-package Creational.Builder;
-
 class User {
     private final String UserId;
     private final String UserName;

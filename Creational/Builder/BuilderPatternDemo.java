@@ -1,5 +1,3 @@
-package Creational.Builder;
-
 // Client
 public class BuilderPatternDemo {
     public static void main(String[] args) {
