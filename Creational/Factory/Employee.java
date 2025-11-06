@@ -1,4 +1,3 @@
 public interface Employee {
-    int salary();
-    
+    int salary();   
 }
