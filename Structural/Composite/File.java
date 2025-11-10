@@ -9,7 +9,7 @@ class File implements FileSystem {
     }
 
     @Override
-    public void showDetails() {
-        System.out.println("File: " + name);
+    public void showDetails(String indent) {
+        System.out.println(indent + "File: " + name);
     }
 }

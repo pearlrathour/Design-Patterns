@@ -1,4 +1,4 @@
-\package Structural.Decorator;
+package Structural.Decorator;
 
 class SugarDecorator extends CoffeeDecorator {
     public SugarDecorator(Coffee coffee) {

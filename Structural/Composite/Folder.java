@@ -21,10 +21,10 @@ class Folder implements FileSystem {
     }
 
     @Override
-    public void showDetails() {
-        System.out.println("Folder: " + name);
+    public void showDetails(String indent) {
+        System.out.println(indent + "Folder: " + name);
         for (FileSystem c : components) {
-            c.showDetails();
+            c.showDetails(indent + " ");
         }
     }
 }

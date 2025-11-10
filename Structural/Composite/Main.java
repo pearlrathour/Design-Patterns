@@ -15,6 +15,6 @@ public class Main {
         folder2.addComponent(folder1);
         folder2.addComponent(file3);
 
-        folder2.showDetails();
+        folder2.showDetails("");
     }
 }
